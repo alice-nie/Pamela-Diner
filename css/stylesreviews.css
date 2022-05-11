@@ -1,0 +1,155 @@
+/* general aesthetics */
+
+.button {
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #F06D47;
+  }
+
+body {
+    background-color: #ffffff;
+    font-family: Ubuntu, "helvetica", sans-serif;
+
+}
+
+/* make logo center top */
+.top_row{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 120px;
+    margin-bottom: -0.5em;
+}
+
+.top_row img{
+    width: 100%;
+    height: auto;
+}
+
+.hori_line{
+    border-bottom: 1.25px solid black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+/* customize navbar */
+
+.menu{
+    box-shadow: 0px 15px 10px -15px #111;
+}
+
+#navbar{
+    text-align: center;
+}
+
+#navbar nav a {
+	text-decoration: none;
+	font-size: 0.85em;
+	font-weight: bold;
+	padding: 5px;
+	color: #000000;
+    margin: 75px;
+}
+
+#navbar nav a.selected {
+	color: #BC521B;	
+}
+#navbar nav a.selected:hover {
+	color: #bbbbbb;	
+}
+
+#navbar nav a:hover {	
+	color: #F06D47;
+}
+
+
+/* footer */
+footer {
+	clear: both; /* The clear property specifies which side(s) of an element other floating elements are not allowed. */
+	margin: 0;
+	padding: .5em;
+	color: #333333;
+	font-variant: small-caps; 
+	font-size: .813em;
+	text-align: center;
+	border-top: 1px dotted #cccccc;
+    background-color: pink;
+	/* background-color: #ddd; */
+}
+
+#last{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+footer img{
+    width: 50%;
+    height: 50%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*********** review *************/
+
+.company{
+    display:container;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 250px;
+}
+.company img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+
+}
+
+.reviews{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90%;
+}
+
+.rev-card > img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.down{
+    padding-top: 75px;
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+}
+
+h3{
+    text-align: center;
+    font-size: 2em;
+}
+
+
+a:link{
+    color: pink;
+}
+
+a:visited{
+    color:gray;
+}

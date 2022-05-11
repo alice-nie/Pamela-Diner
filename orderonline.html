@@ -1,0 +1,101 @@
+<!DOCTYPE html> 	
+<html lang="en"> 	
+<head> <!-- for the title and meta data; not directly seen by the user -->
+	
+    <!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Alice Nie">
+	<meta name="keywords" content="Pamela's Diner">
+	<meta name="description" content="P&G's Pamela's Diner Website">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0"/>
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Pamela's Diner</title>
+
+    <!-- Add all stylesheet references -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/stylesorderonline.css">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import Google Ubuntu font-->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+	<!-- Import font awesome library-->
+	<script src="https://kit.fontawesome.com/ec2ce5ac2c.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" media="all" type="text/css" href="css3/jquery-ui.css">
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript">  </script>
+    <script src="js/jquery-ui.min.js" type="text/javascript">  </script>
+    <script src="js/scripts.js" type="text/javascript"> </script>  
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+ 
+
+    <script>
+        showSlides(slideIndex);
+    </script>
+
+</head>
+
+<body> <!-- The body is where the main content goes -->
+
+	<div class = "menu">
+		<header>
+				<div class = "top_row">
+					<a href="index.html">
+						<img src="images/logo.png" alt="logo" class="center">
+					</a>
+				</div> <!-- top_row -->
+			<div class = "hori_line"></div> <!-- hori_line -->
+		</header>
+
+			<div id = "navbar">
+				<nav> <!-- Nav is a tag in HTML 5 to organize navigation items -->
+					<a href="menu.html"> Menu </a>  
+					<a href="locations.html"> Locations </a> 
+					<a href="orderonline.html" class = "selected"> Order Online </a>
+					<a href="contact.html" > Contact </a> 
+					<a href="reviews.html"> Reviews </a>
+				</nav>
+				<br>
+			</div> <!-- navbar -->
+	</div> <!-- menu -->
+
+	<div id = "order">
+        <h3> Order online at these locations! </h3> <br>
+        <div class = "location">
+            <div class="card">
+                <img src="images/diner1.jpg" alt="food">
+                    <div class="desc">
+                        <h4><b>Shadyside</b></h4>
+                        <a href="https://www.toasttab.com/pamelas-diner-shadyside-5527-walnut-st/v3" target = "_blank"> Order from here</a>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="images/diner2.jpg" alt="food">
+                    <div class="desc">
+                        <h4><b>Mt. Lebanon</b></h4>
+                        <a href="https://www.toasttab.com/pamelas-diner-mt-lebanon-427-washington-road/v3" target ="_blank"> Order from here</a>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="images/diner3.jpg" alt="food">
+                    <div class="desc">
+                        <h4><b>Strip District</b></h4>
+						<a href="https://www.toasttab.com/pamela-s-diner-strip-district-60-21st-street/v3" target="_blank"> Order from here</a>
+                    </div>
+            </div>
+        </div>
+
+	</div>
+
+	<footer>
+		<div id = "last">
+			<img src="images/logo.png" alt="logo" class="center">
+		</div>	
+		&copy; Pamela's Diner<br>
+	</footer>
+</body>
+</html>

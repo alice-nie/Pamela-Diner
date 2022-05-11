@@ -1,0 +1,330 @@
+
+/* general aesthetics */
+
+.button {
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #F06D47;
+  }
+
+
+
+
+body {
+    background-color: #ffffff;
+    font-family: Ubuntu, "helvetica", sans-serif;
+
+}
+
+
+/* make logo center top */
+.top_row{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 120px;
+    margin-bottom: -0.5em;
+}
+
+.top_row img{
+    width: 100%;
+    height: auto;
+}
+
+.hori_line{
+    border-bottom: 1.25px solid black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+/* customize navbar */
+
+.menu{
+    margin-bottom: 200px;
+    box-shadow: 0px 15px 10px -15px #111;
+}
+
+#navbar{
+    text-align: center;
+}
+
+#navbar nav a {
+	text-decoration: none;
+	font-size: 0.85em;
+	font-weight: bold;
+	padding: 5px;
+	color: #000000;
+    margin: 75px;
+}
+
+#navbar nav a.selected {
+	color: #BC521B;	
+}
+#navbar nav a.selected:hover {
+	color: #bbbbbb;	
+}
+
+#navbar nav a:hover {	
+	color: #F06D47;
+}
+
+
+/* customize welcome section */
+
+.welc_container{
+    width: 50%;
+    margin-top: -10em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+}
+
+.welc_container img{
+	float:right;
+    width: 30%;
+    height: 300px;
+}
+
+#welc_text{
+    padding-top: 30px;
+    font-size: 1.25em;
+}
+
+/* location banner */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+    background-color: #fff9dd;
+    border: 1px solid #FAEDAE;
+    padding: 10px;
+  }
+  
+.grid-container > div {
+    text-align: center;
+    font-size: 1em;
+    }
+
+.fa-location-dot{
+    color: pink;
+    padding-right: 5px;
+}
+
+/* About Section */
+.banner{
+    margin-top: 5em;
+    display: block;
+    width: 100vw;
+    height: 50px;
+    margin-bottom: 10em;
+}
+
+.banner img{
+    padding-top: 40px;
+    width: 100%;
+    height: 125px;
+    object-fit: cover;;
+}
+
+#about-container{
+    margin-left: 40%;
+    margin-right: auto;
+}
+
+#about{
+    width: 80%;
+    height: auto;
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 2em;
+}
+
+#general{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 100px;
+}
+
+#facts {
+    position: absolute; /* Sit on top of the page content */
+    background-color: #fff9dd;
+    border: 2px solid #FAEDAE;
+    top: -20px;
+    left: 200px;
+    width: 25%;
+    height: 90%;
+    border-radius: 25px;
+  }
+
+#facts h3{
+    text-align: center;
+    font-size: 1.25em;
+    padding-bottom: 12px;
+    border-bottom: 2px dotted black;
+}
+
+#facts p{
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#facts ul{
+    font-size: 1.25em;
+}
+
+
+/* photo gallery */
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 0px;
+    border: 1px solid #FAEDAE;
+  }
+
+
+.gallery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.item1{
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end: 3;
+}
+
+.item8{
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:3;
+    grid-row-end: 5;
+}
+
+.item15{
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:5;
+    grid-row-end: 7;
+}
+
+/* Connect with Us */
+
+#connect{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 300px;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 20px;
+    padding-top: 50px;
+}
+
+.social-icons{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 3em;
+    color: pink;
+}
+
+/* footer */
+footer {
+	clear: both; /* The clear property specifies which side(s) of an element other floating elements are not allowed. */
+	margin: 0;
+	padding: .5em;
+	color: #333333;
+	font-variant: small-caps; 
+	font-size: .813em;
+	text-align: center;
+	border-top: 1px dotted #cccccc;
+    background-color: pink;
+	/* background-color: #ddd; */
+}
+
+#last{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+footer img{
+    width: 50%;
+    height: 50%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*********** menu *************/
+
+#menubar{
+    background-color: pink;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.dropbtn {
+    background-color: pink;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #f198cf;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+a:link{
+    color: pink;
+}
+
+a:visited{
+    color:gray;
+}

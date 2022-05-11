@@ -1,0 +1,262 @@
+
+/* general aesthetics */
+
+.button {
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #F06D47;
+  }
+
+body {
+    background-color: #ffffff;
+    font-family: Ubuntu, "helvetica", sans-serif;
+
+}
+
+/* make logo center top */
+.top_row{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 120px;
+    margin-bottom: -0.5em;
+}
+
+.top_row img{
+    width: 100%;
+    height: auto;
+}
+
+.hori_line{
+    border-bottom: 1.25px solid black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+/* customize navbar */
+
+.menu{
+    box-shadow: 0px 15px 10px -15px #111;
+}
+
+#navbar{
+    text-align: center;
+}
+
+#navbar nav a {
+	text-decoration: none;
+	font-size: 0.85em;
+	font-weight: bold;
+	padding: 5px;
+	color: #000000;
+    margin: 75px;
+}
+
+#navbar nav a.selected {
+	color: #BC521B;	
+}
+#navbar nav a.selected:hover {
+	color: #bbbbbb;	
+}
+
+#navbar nav a:hover {	
+	color: #F06D47;
+}
+
+
+/* footer */
+footer {
+	clear: both; /* The clear property specifies which side(s) of an element other floating elements are not allowed. */
+	margin: 0;
+	padding: .5em;
+	color: #333333;
+	font-variant: small-caps; 
+	font-size: .813em;
+	text-align: center;
+	border-top: 1px dotted #cccccc;
+    background-color: pink;
+	/* background-color: #ddd; */
+}
+
+#last{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+footer img{
+    width: 50%;
+    height: 50%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*********** menu *************/
+
+#menubar{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+#location{
+    grid-column-start:1;
+    grid-column-end:2;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 0px;
+}
+
+.dropbtn {
+    background-color: pink;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #f198cf;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+  /* Style the search box inside the navigation bar */
+  .topnav{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: 35px;
+    text-align: center;
+  }
+  
+  #pdf{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 25px;
+    color:pink;
+  }
+
+  #menu{
+    text-align: center;
+    font-size: 1.25em;
+    padding-bottom: 100px;
+  }
+  
+  .food{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    text-align: center;
+    height: 60%;
+  }
+
+  .desc{
+      padding: 2px 16px;
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  .card img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #accordion{
+    text-align: center;
+    border: 2px solid black;
+    width: 800px;
+    margin: 90px auto;
+    color: black;
+    background-color: white;
+    padding: 10px;
+  }
+
+  /* Positions the plus sign 5px from the right. Centers it using the transform property. */
+  #accordion h4{
+    position: relative;
+    margin: 10px 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  #accordion h4::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+
+
+/* Adds a horizontal line between the contents */
+
+#accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+
+h2{
+  display: container;
+  text-align:center;
+  font-size:2em;
+}
+
+
+a:link{
+  color: pink;
+}
+
+a:visited{
+  color:gray;
+}

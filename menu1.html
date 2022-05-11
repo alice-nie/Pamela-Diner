@@ -1,0 +1,182 @@
+<!DOCTYPE html> 	
+<html lang="en"> 	
+<head> <!-- for the title and meta data; not directly seen by the user -->
+	
+    <!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Alice Nie">
+	<meta name="keywords" content="Pamela's Diner">
+	<meta name="description" content="P&G's Pamela's Diner Website">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0"/>
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Pamela's Diner</title>
+
+    <!-- Add all stylesheet references -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/stylesmenu.css">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import Google Ubuntu font-->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+	<!-- Import font awesome library-->
+	<script src="https://kit.fontawesome.com/ec2ce5ac2c.js" crossorigin="anonymous"></script>
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript">  </script>
+	<script src="js/jquery-ui.min.js" type="text/javascript"> </script>
+	<script src="js/scripts.js" type="text/javascript"> </script> <!-- External reference -->
+    <script>
+		$(function() {
+			$( "#dropdown" ).dropdown();
+		});
+    </script>
+    <script>
+		$(function(){
+			$( "#accordion" ).accordion();
+		});
+	</script>
+
+</head>
+
+<body> <!-- The body is where the main content goes -->
+
+	<div class = "menu">
+		<header>
+				<div class = "top_row">
+					<a href="index.html">
+						<img src="images/logo.png" alt="logo" class="center">
+					</a>
+				</div> <!-- top_row -->
+			<div class = "hori_line"></div> <!-- hori_line -->
+		</header>
+
+			<div id = "navbar">
+				<nav> <!-- Nav is a tag in HTML 5 to organize navigation items -->
+					<a href="menu.html" class = "selected"> Menu </a>  
+					<a href="locations.html"> Locations </a> 
+					<a href="orderonline.html"> Order Online </a>
+					<a href="contact.html"> Contact </a> 
+					<a href="reviews.html"> Reviews </a>
+				</nav>
+				<br>
+			</div> <!-- navbar -->
+	</div> <!-- menu -->
+
+    <div id = "menubar">
+        <div id = "location">
+            <h3> eating at... </h3> 
+            <br><h4>Strip District</h4>
+        </div>
+        <div class="topnav">
+            <input type="text" placeholder="Search.." size = "40">
+        </div>
+        <div id = "pdf">
+            <a href="https://www.pamelasdiner.com/_files/ugd/fa9060_b2e86fc45c544ccfaae6052be40e819a.pdf" target="_blank">
+                <i class="fa-solid fa-file-pdf"></i>           
+            </a>
+        </div>
+    </div>
+      
+    <div id = "menu">
+        <h3> eggs </h3> <br>
+        <div class = "food">
+            <div class="card">
+                <img src="images/meateggs.jpg" alt="food">
+                    <div class="desc">
+                        <h4><b>Meat & Eggs</b></h4>
+                        <p>2 eggs any style with your choice of double smoked, thick-slice bacon, hand-carved ham, sausage links or turkey sausage patties</p>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="images/gails.jpg" alt="food">
+                    <div class="desc">
+                        <h4><b>Gail's Favorite Eggs</b></h4>
+                        <p>Lightly scrambled, topped with cream cheese & scallions, served with Lyonnaise potatoes & toast</p>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="images/cheeseomelet.jpg" alt="food">
+                    <div class="desc">
+                        <h4><b>Cheese Omelet</b></h4>
+                        <p>Choice of American, Swiss or cheddar</p>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="images/western.jpg" alt="food">
+                    <div class="desc">
+                        <h4><b>Western Omelet</b></h4>
+                        <p>Ham, pepper, & onion</p>
+                    </div>
+            </div>
+        </div>
+
+        <h3> Hotcakes, French Toast, & Waffles </h3> <br>
+        <div class = "food">
+            <div class="card">
+                <img src="images/hotcake.jpg" alt="food">
+                    <div class="desc">
+                        <h4><b>Crepe-style Short Stack HotCakes</b></h4>
+                        <p>Choice of meat</p>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="images/frenchtoast.jpg" alt="food">
+                    <div class="desc">
+                        <h4><b>California French Toast</b></h4>
+                        <p>Home-style whole weat raisin bread dunked in cinnamon-vanilla egg batter.</p>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="images/croissantfrench.jpg" alt="food">
+                    <div class="desc">
+                        <h4><b>Croissant French Toast</b></h4>
+                        <p>Croissants soaked in cinnamon-vanilla egg batter & topped with caramel sauce & walnuts</p>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="images/Belgian.jpg" alt="food">
+                    <div class="desc">
+                        <h4><b>Belgian Waffle</b></h4>
+                        <p>With walnuts, chocolate chips, bananas, strawberries, or blueberries extra</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id = "accordion">
+        <h4>FAQ</h4>
+            <div>
+                <ol>
+                    <li> <strong>What are your hours of operation?</strong></li>
+                    <p> Please look at the locations tab</p>
+                    <li> <strong> What type of food do you sell? </strong></li>
+                    <p> We sell breakfast and lunch food</p>
+                    <li> <strong> Do you take reservations? </strong></li>
+                    <p> Nope, we're walk in!</p>
+                </ol> 
+                <hr></div> 
+                
+            <h4>Nutrition Facts</h4>
+            <div><p>
+                Nutritional facts can be asked for at the cashier. At the moment, this website does not
+                contain such informtion. However, we are currently looking in to adding it to our menu.
+                <hr>
+                </p></div>
+            <h4>Recent Events</h4>
+            <div><p>
+                During the 2008 United States presidential election, Barack Obama visited Pamela's Diner for a campaign visit. Once elected, President Obama invited Klingensmith and Cohen to the White House for a Memorial Day breakfast with the Obama family and 80 veterans. Later that year, during the 2009 G-20 Pittsburgh summit, President Obama expressed dismay that he was unable to return to Pamela's Diner during that trip, but First Lady Michelle Obama did visit. Incidentally, the Oakland storefront received damage during the protests that accompanied the G-20 summit. 
+
+Pamela's Diner announced in December 2021 that their original Squirrel Hill location will be closing largely due to COVID-19. With the loss of several long-time employees, the location decided to shut its doors. As the first Pamela's Diner location, it has been around 42 years. The other diner locations will stay open, however. The owners hinted that they are open to another, smaller Squirrel Hill location in the future.
+                <hr></p>
+            </div>
+        </div>
+
+
+
+	<footer>
+		<div id = "last">
+			<img src="images/logo.png" alt="logo" class="center">
+		</div>	
+		&copy; Pamela's Diner<br>
+	</footer>
+</body>
+</html>
